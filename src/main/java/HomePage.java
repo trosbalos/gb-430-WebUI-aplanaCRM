@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,25 +27,30 @@ public class HomePage extends BasePage {
 
 
     //Проекты
+    @Step(value = "project MainButton Click")
     public HomePage projectMainButtonClick(){
         projectMainButton.click();
         return this;
     }
+    @Step(value = "project MainButton AllProjects Click")
     public HomePage projectMainButtonAllProjectsClick(){
         projectMainButtonAllProjects.click();
         return  this;
     }
     //Создание контактного лица в организации
+    @Step(value = "couter Agents Click")
     public HomePage couterAgentsClick(){
         couterAgents.click();
         return this;
     }
+    @Step(value = "contact Persons Click")
     public HomePage contactPersonsClick(){
         contactPersons.click();
         return  this;
     }
 
     //лого для LoginTest ассертов
+    @Step(value = "Ассерт logoGeekbrains")
     public WebElement logoGeekbrains() {
         return logoGeekbrains; // logoGeekbrains
     }

@@ -1,3 +1,4 @@
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -80,82 +81,97 @@ public class ProjectPage extends BasePage {
         projectCreateButton.click();
         return this;
     }
+    @Step(value = "enter ProjectName Field = {projectName}")
     public ProjectPage enterProjectNameField(String projectName){
         projectNameField.sendKeys(projectName);
         return this;
     }
-
+    @Step(value = "projectOrg Chosen Click")
     public ProjectPage projectOrgChosenClick(){
         projectOrgChosen.click();
         return this;
     }
+    @Step(value = "enter ProjectOrg Input = {projectOrgName}")
     public ProjectPage enterProjectOrgInput(String projectOrgName){
         projectOrgInput.sendKeys(projectOrgName);
         return this;
     }
+    @Step(value = "project OrgFind Click")
     public ProjectPage projectOrgFindClick(){
         projectOrgFind.click();
         return this;
     }
-
+    @Step(value = "project OrgResult Click")
     public ProjectPage projectOrgResultClick(){
         projectOrgResult.click();
         return this;
     }
+    @Step(value = "contact Person Click")
     public ProjectPage contactPersonClick(){
         contactPerson.click();
         return this;
     }
+    @Step(value = "enter Contact Person Input = {contactPersonName}")
     public ProjectPage enterContactPersonInput(String contactPersonName){
         contactPersonInput.sendKeys(contactPersonName);
         return this;
     }
+    @Step(value = "contact Person Choose Click")
     public ProjectPage contactPersonChooseClick(){
         contactPersonChoose.click();
         return this;
     }
+    @Step(value = "unit Selection Click")
     public ProjectPage unitSelectionClick(){
         unitSelection.click();
         return this;
     }
+    @Step(value = "unit Selection Choose Click")
     public ProjectPage unitSelectionChooseClick(){
         unitSelectionChoose.click();
         return this;
     }
+    @Step(value = "curator Selection Click")
     public ProjectPage curatorSelectionClick(){
         curatorSelection.click();
         return this;
     }
+    @Step(value = "curator Selection Choose Click")
     public ProjectPage curatorSelectionChooseClick(){
         curatorSelectionChoose.click();
         return this;
     }
-
+    @Step(value = "rp Selection Click")
     public ProjectPage rpSelectionClick(){
         rpSelection.click();
         return this;
     }
+    @Step(value = "rp Selection Choose Click")
     public ProjectPage rpSelectionChooseClick(){
         rpSelectionChoose.click();
         return this;
     }
-
+    @Step(value = "administrator Selection Click")
     public ProjectPage administratorSelectionClick(){
         administratorSelection.click();
         return this;
     }
+    @Step(value = "administrator Selection ChooseClick")
     public ProjectPage administratorSelectionChooseClick(){
         administratorSelectionSelectionChoose.click();
         return this;
     }
+    @Step(value = "managerSelection Click")
     public ProjectPage managerSelectionClick(){
         managerSelection.click();
         return this;
     }
+    @Step(value = "managerSelection Choose Click")
     public ProjectPage managerSelectionChooseClick(){
         managerSelection.click();
         return this;
     }
+    @Step(value = "saveAndClose Button Click")
     public ProjectPage saveAndCloseButtonClick(){
         saveAndCloseButton.click();
         return this;

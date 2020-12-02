@@ -1,11 +1,12 @@
 import static org.junit.jupiter.api.Assertions.*;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebElement;
 
 public class CreateProjectTest extends BaseTest {
 
-
+@Feature("Create Project")
     @Test
     void createProjectTest()  {
         new HomePage(driver)
